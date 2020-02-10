@@ -4,7 +4,7 @@ import {withRouter} from "react-router-dom";
 const Sidebar = (props) => {
 
   const companySettings = () => {
-    props.history.push("/companysettings")
+    props.history.push("/companysetting")
   }
 
   const cashBank = () => {

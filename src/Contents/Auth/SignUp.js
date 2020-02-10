@@ -1,7 +1,4 @@
 import React from 'react';
-// import './dist/css/style.min.css';
-// import './dist/css/pages/login-register-lock.css';
-// import './Style.css'
 import {Formik, ErrorMessage, Form, Field} from 'formik';
 import * as Yup from 'yup';
 
@@ -102,7 +99,7 @@ export const SignUp = (props) => {
                             </div>
                             <div className="form-group text-center">
                                 <div className="col-xs-12">
-                                    <button className="btn btn-info btn-rounded text-uppercase" type="submit" disabled={isSubmitting}>Sign Up</button>
+                                    <button className="btn btn-info btn-rounded text-uppercase w-100" type="submit" disabled={isSubmitting}>Sign Up</button>
                                 </div>
                             </div>
                             <div className="form-group m-b-0">

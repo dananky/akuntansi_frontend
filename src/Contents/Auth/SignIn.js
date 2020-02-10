@@ -1,5 +1,4 @@
 import React from 'react';
-// import './dist/css/style.min.css';
 import {Formik, Form, ErrorMessage, Field} from 'formik';
 import * as Yup from 'yup';
 
@@ -50,7 +49,7 @@ export const SignIn = (props) => {
                                 </div>
                                 <div className="form-group text-center">
                                     <div className="col-xs-12">
-                                        <button className="btn btn-info btn-rounded text-uppercase" type="submit">Sign In</button>
+                                        <button className="btn btn-info btn-rounded text-uppercase w-100" type="submit">Sign In</button>
                                     </div>
                                 </div>
                                 <div className="form-group m-b-0">

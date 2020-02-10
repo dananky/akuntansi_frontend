@@ -28,7 +28,7 @@ import { SalesQuote } from './Contents/Sales/SalesQuote';
 import { SalesReturn } from './Contents/Sales/SalesReturn';
 import { PriceAdjusment } from './Contents/Sales/PriceAdjusment';
 import { Discount } from './Contents/Sales/Discount';
-import { ComissioSales } from './Contents/Sales/ComissionSales';
+import { ComissionSales } from './Contents/Sales/ComissionSales';
 import { Purchase } from './Contents/Purchase/Purchase';
 import { PurchaseInvoice } from './Contents/Purchase/PurchaseInvoice';
 import { PurchaseDelivery } from './Contents/Purchase/PurchaseDelivery';
@@ -38,7 +38,7 @@ import { PurchaseOrder } from './Contents/Purchase/PurchaseOrder';
 import { SupplierPrice } from './Contents/Purchase/SupplierPrice';
 
 import { Expense } from './Contents/Expense/Expense';
-import { Inventory } from './Contents/InventoryProduct/InventoryProduct';
+import { InventoryProduct } from './Contents/InventoryProduct/InventoryProduct';
 import { AssetManagement } from './Contents/AssetManagement/AssetManagement';
 import { Tax } from './Contents/Tax/Tax';
 import { Reports } from './Contents/Reports/Reports';
@@ -62,7 +62,7 @@ const routing = (
         <Route path="/sales" component={Sales} />
         <Route path="/purchase" component={Purchase} />
         <Route path="/expense" component={Expense} />
-        <Route path="/inventory" component={Inventory} />
+        <Route path="/inventory" component={InventoryProduct} />
         <Route path="/asset" component={AssetManagement} />
         <Route path="/tax" component={Tax} />
         <Route path="/reports" component={Reports} />
@@ -77,7 +77,7 @@ const routing = (
         <Route path="/salesreturn" component={SalesReturn} />
         <Route path="/priceadjusment" component={PriceAdjusment} />
         <Route path="/discount" component={Discount} />
-        <Route path="/comissionsales" component={ComissioSales} />
+        <Route path="/comissionsales" component={ComissionSales} />
         <Route path="/purchaseinvoice" component={PurchaseInvoice} />
         <Route path="/purchaseorder" component={PurchaseOrder} />
         <Route path="/purchasedelivery" component={PurchaseDelivery} />

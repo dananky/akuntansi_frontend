@@ -1,9 +1,8 @@
 import React from 'react';
-// import './Style.css'
 
 export const CashBank = () => {
     return (
-        <div className="cashbank container mt-5">
+        <div className="cashbank mt-5">
             <div className="button1">
                 <button className="btn btn-dark">Receive Money</button>
                 <button className="btn btn-dark">Transfer Fund</button>

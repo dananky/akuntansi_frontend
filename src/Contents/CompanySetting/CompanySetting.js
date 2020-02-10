@@ -1,13 +1,11 @@
 import React from 'react';
 import {Formik, Form, ErrorMessage, Field} from 'formik';
 import * as Yup from  'yup';
-// import '../Auth/dist/css/style.min.css';
-// import '../Auth/dist/css/pages/login-register-lock.css';
 
 export const CompanySetting = (props) => {
 
     return (
-        <div className="skin-default card-no-border">
+        <div className="skin-default card-no-border mt-4">
             <div className="login-box card">
                 <div className="card-body">
                     <Formik
@@ -98,7 +96,7 @@ export const CompanySetting = (props) => {
                             </div>
                             <div className="form-group text-center">
                                 <div className="col-xs-12">
-                                    <button className="btn btn-info btn-rounded text-uppercase" type="submit">Simpan</button>
+                                    <button className="btn btn-info btn-rounded text-uppercase w-100" type="submit">Simpan</button>
                                 </div>
                             </div>
                         </Form>
