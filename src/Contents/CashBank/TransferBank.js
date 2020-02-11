@@ -1,58 +1,76 @@
 import React from 'react';
-// import './Style.css';
 
 export const TransferBank = () => {
     return (
-        <div className="transferbank container mt-5">
-            <div className="card">
-                <div className="button-transferbank">
-                    <button className="btn btn-dark">Export</button>
-                    <button className="btn btn-dark">Print</button>
-                    <button className="btn btn-dark">Save</button>
-                    <button className="btn btn-dark">Edit</button>
+        <>
+        <div className="card mt-4">
+            <div className="card-body">
+                <div className="d-flex flex-column mb-5">
+                <div className="d-flex mb-5">
+                    <button className="ml-auto btn btn-sm btn-secondary mr-2">
+                    Edit
+                    </button>
+                    <button className="btn btn-sm btn-secondary mr-2">Save</button>
+                    <button className="btn btn-sm btn-secondary mr-2">Print</button>
+                    <button className="btn btn-sm btn-secondary">Export</button>
                 </div>
-                <div className="card-body">
-                    <div className="row">
-                        <div class="col">
-                            <h6>Transfer from </h6>
-                            <select className="custom-select">
-                                <option>Make a selection</option>
-                            </select>
-                            <h6>Date</h6>
-                            <input type="date" className="form-control"/>
-                        </div>
+                <div className="d-flex">
+                    <div className="pr-3 w-25">
+                    <label>Transfer from </label>
+                    <select className="form-control form-control-sm">
+                        <option>select</option>
+                    </select>
+                    <label className="mt-4">Date</label>
+                    <input type="date" className="form-control form-control-sm"/>
+                </div>
 
-                        <div class="col">
-                            <h6>Deposit to</h6>
-                            <select className="custom-select">
-                                <option>Make a selection</option>
-                            </select>
-                            <h6>Tags</h6>
-                            <input type="text" placeholder="input text" className="form-control"/>
-                        </div>
+                <div className="pr-3 w-25">
+                    <label>Deposit to</label>
+                    <select className="form-control form-control-sm">
+                        <option>select</option>
+                    </select>
+                    <label className="mt-4">Tags</label>
+                    <input type="date" className="form-control form-control-sm"/>
+                </div>
 
-                        <div class="col">
-                            <h6>Amount</h6>
-                            <input type="text" placeholder="input text" className="form-control"/>
-                            <h6>Attachment Files</h6>
-                            <input type="text" placeholder="input text" className="form-control"/>
-                        </div>
+                <div className="pr-3 w-25">
+                    <label>Amount</label>
+                    <input type="text" placeholder="amount" className="form-control form-control-sm"/>
 
-                        <div class="col">
-                            <h6>Transaction Number</h6>
-                            <input type="text" placeholder="auto" className="form-control" disabled/>
-                        </div>
-                    </div>
-                    <div className="memo">
-                        <h6>Memo</h6>
-                        <textarea name="memo-transferbank" id="memo-transferbank" rows="5"/>
-                    </div>
-                    <div className="button2-transferbank">
-                        <button className="btn btn-success">Create</button>
-                        <button className="btn btn-danger">Cancel</button>
+                    <label className="mt-4">Attachment</label>
+                    <input type="text" placeholder="attachment" className="form-control form-control-sm" disabled/>
+                </div>
+
+                <div className="pr-3 w-25">
+                    <label>Transaction Number</label>
+                    <input type="text" placeholder="auto" className="form-control form-control-sm" disabled/>
+                </div>
+            </div>
+            </div>
+            <div className="pl-0">
+            <div className="d-flex">
+                <div className="card">
+                    <div className="card-body">
+                        <input
+                        className="form-control form-control-sm mb-2"
+                        type="text"
+                        placeholder="Memo"
+                        />
+                        <textarea
+                        className="form-control form-control-sm" style={{minHeight:"6rem"}}
+                        type="text"
+                        placeholder=""
+                        ></textarea>
                     </div>
                 </div>
             </div>
+            <div className="d-flex mt-4 pb-5">
+                <button className="btn btn-secondary ml-auto mr-2">Cancel</button>
+                <button className="btn btn-secondary">Create</button>
+            </div>
+            </div>
         </div>
+    </div>
+    </>
     )
 }

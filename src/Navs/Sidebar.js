@@ -40,7 +40,7 @@ const Sidebar = (props) => {
   }
 
   const report = () => {
-    props.history.push("/report")
+    props.history.push("/reports")
   }
 
   const contactList = () => {
@@ -48,7 +48,7 @@ const Sidebar = (props) => {
   }
 
   const settings = () => {
-    props.history.push("/settings")
+    props.history.push("/setting")
   }
 
     return (

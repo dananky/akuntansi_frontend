@@ -1,20 +1,29 @@
 import React from 'react';
 
-export const Tax = () => {
+export const Tax = (props) => {
+
+    const handleMontlyTax = () => {
+        props.history.push('/montlytax')
+    }
+    const handleAnnualTax = () => {
+        props.history.push('/annualtax')
+    }
+
+
     return (
-        <div className="tax container mt-5">
-            <div className="button-tax">
-                <button className="btn btn-dark">Montly Tax</button>
-                <button className="btn btn-dark">Annual Tax</button>
-            </div>
             
-            <div className="card">
-                <div className="card-body">
-                    <div className="button2-tax">
-                        <button className="btn btn-dark">Export</button>
-                        <button className="btn btn-dark">Print</button>
-                        <button className="btn btn-dark">Save</button>
-                        <button className="btn btn-dark">Edit</button>
+        <div className="card mt-4">
+            <div className="card-body">
+                <div className="d-flex mb-5">
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleMontlyTax}>Montly Tax</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleAnnualTax}>Annual Tax</button>
+                </div>
+                <div className="d-flex flex-column mb-5">
+                    <div className="d-flex mb-4 justify-content-end">
+                        <button className="btn btn-sm btn-secondary mr-2">Edit</button>
+                        <button className="btn btn-sm btn-secondary mr-2">Save</button>
+                        <button className="btn btn-sm btn-secondary mr-2">Print</button>
+                        <button className="btn btn-sm btn-secondary">Export</button>
                     </div>
                 </div>
             </div>
