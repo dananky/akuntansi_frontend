@@ -17,7 +17,6 @@ export const ContactList = (props) => {
 
 
     return (
-            
         <div className="card mt-4">
             <div className="card-body">
                 <div className="d-flex mb-5">
@@ -78,7 +77,6 @@ export const ContactList = (props) => {
                             <td>
                                 <input type="text" className="form-control" placeholder="input text"/>
                             </td>
-
                         </tr>       
                     </tbody>
                 </table>

@@ -3,8 +3,8 @@ import React from "react";
 const NewAccount = props => {
   return (
     <>
-      <div className="content">
-        <h4 className="mb-4">New Account</h4>
+    <div className="card mt-4">
+      <div className="card-body">
         <div className="d-flex flex-column mb-5">
           <div className="d-flex mb-4 ">
             <button className="ml-auto btn btn-sm btn-secondary mr-2">
@@ -62,6 +62,7 @@ const NewAccount = props => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

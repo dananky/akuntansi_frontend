@@ -23,19 +23,19 @@ export const SupplierPrice = () => {
                     </div>
 
                     <div className="pr-3 w-25">
-                        <label>Transaction Date</label>
+                        <label>Start Date</label>
                         <input type="date" className="form-control form-control-sm"/>
                     </div>
 
-                    <div className="pr-3 w-25">
-                        <label>Purchase Return</label>
+                    <div className="pr-3 w-25 ml-auto">
+                        <label>Supplier Price</label>
                         <select className="form-control form-control-sm">
+                            <option>Supplier Price</option>
                             <option>Purchase Return</option>
                             <option>Purchase Order</option>
                             <option>Purchase Invoice</option>
                             <option>Purchase Delivery</option>
                             <option>Purchase Quote</option>
-                            <option>Supplier Price</option>
                             <option>Prepaid Purchase</option>
                         </select>
                     </div>
@@ -46,36 +46,32 @@ export const SupplierPrice = () => {
                 <table className="table table-sm table-bordered">
                     <thead className="thead-dark">
                     <tr>
+                        <th>Code</th>
                         <th>Products</th>
-                        <th>Description</th>
-                        <th>Qty</th>
                         <th>Unit</th>
-                        <th>Unit Price</th>
-                        <th>Disc.</th>
-                        <th>Tax</th>
-                        <th>Total Amount</th>
+                        <th>Price</th>
+                        <th>New Price</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>
                             <select className="form-control form-control-sm">
-                                <option>Select tax</option>
+                                <option>select</option>
                             </select>
                         </td>
                         <td>
                             <input 
                                 type="text" 
-                                placeholder="description" 
+                                placeholder="product" 
                                 className="form-control form-control-sm"
                             />
                         </td>
                         <td>
                             <select className="form-control form-control-sm">
-                                <option></option>
+                                <option>select</option>
                             </select>
                         </td>
-                        <td></td>
                         <td>
                             <div className="input-group input-group-sm">
                                 <div className="input-group-prepend input-group-prepend-sm">
@@ -84,8 +80,6 @@ export const SupplierPrice = () => {
                                 <input type="number" className="form-control form-control-sm" aria-describedby="basic-addon1"/>
                             </div>
                         </td>
-                        <td></td>
-                        <td></td>
                         <td>
                             <div className="input-group input-group-sm">
                                 <div className="input-group-prepend input-group-prepend-sm">
