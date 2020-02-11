@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import App from "./App";
 import CreateExpense from "./Contents/Expense/CreateExpense";
 import NewAccount from "./Contents/GeneralLedger/NewAccount";
+import {GeneralLedger} from "./Contents/GeneralLedger/GeneralLedger";
 import GeneralJournal from "./Contents/GeneralLedger/GeneralJournal";
 import SalariesExpense from "./Contents/GeneralLedger/SalariesExpense";
 import ClosingBook from "./Contents/GeneralLedger/ClosingBook";
@@ -43,6 +44,10 @@ import { AssetManagement } from './Contents/AssetManagement/AssetManagement';
 import { Tax } from './Contents/Tax/Tax';
 import { Reports } from './Contents/Reports/Reports';
 import { ContactList } from './Contents/ContactList/ContactList';
+import { Costumer } from './Contents/ContactList/Costumer';
+import { Employee } from './Contents/ContactList/Employee';
+import { Supplier } from './Contents/ContactList/Supplier';
+import { Other } from './Contents/ContactList/Other';
 import { Setting } from './Contents/Setting/Setting';
 import { SignIn } from './Contents/Auth/SignIn';
 import { SignUp } from './Contents/Auth/SignUp';
@@ -55,40 +60,45 @@ const routing = (
     <div className="page-wrapper">
       <div className="container-fluid">
         <Switch>
-        <Route path="/signin" component={SignIn} />
-        <Route path="/signup" component={SignUp} />
-        <Route path="/companysetting" component={CompanySetting} />
-        <Route path="/cashbank" component={CashBank} />
-        <Route path="/sales" component={Sales} />
-        <Route path="/purchase" component={Purchase} />
-        <Route path="/expense" component={Expense} />
-        <Route path="/inventory" component={InventoryProduct} />
-        <Route path="/asset" component={AssetManagement} />
-        <Route path="/tax" component={Tax} />
-        <Route path="/reports" component={Reports} />
-        <Route path="/contactlist" component={ContactList} />
-        <Route path="/setting" component={Setting} /> 
-        <Route path="/transferbank" component={TransferBank} />
-        <Route path="/receivemoney" component={ReceiveMoney} />
-        <Route path="/paymoney" component={PayMoney} />
-        <Route path="/salesorder" component={SalesOrder} />
-        <Route path="/salesdelivery" component={SalesDelivery} />
-        <Route path="/salesquote" component={SalesQuote} />
-        <Route path="/salesreturn" component={SalesReturn} />
-        <Route path="/priceadjusment" component={PriceAdjusment} />
-        <Route path="/discount" component={Discount} />
-        <Route path="/comissionsales" component={ComissionSales} />
-        <Route path="/purchaseinvoice" component={PurchaseInvoice} />
-        <Route path="/purchaseorder" component={PurchaseOrder} />
-        <Route path="/purchasedelivery" component={PurchaseDelivery} />
-        <Route path="/purchasequote" component={PurchaseQuote} />
-        <Route path="/purchasereturn" component={PurchaseReturn} />
-        <Route path="/supplierprice" component={SupplierPrice} />
-        <Route path="/prepaidpurchase" component={PrepaidPurchase} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/companysetting" component={CompanySetting} />
+          <Route path="/cashbank" component={CashBank} />
+          <Route path="/sales" component={Sales} />
+          <Route path="/purchase" component={Purchase} />
+          <Route path="/expense" component={Expense} />
+          <Route path="/inventory" component={InventoryProduct} />
+          <Route path="/assetmanagement" component={AssetManagement} />
+          <Route path="/tax" component={Tax} />
+          <Route path="/reports" component={Reports} />
+          <Route path="/contactlist" component={ContactList} />
+          <Route path="/costumer" component={Costumer} />
+          <Route path="/employee" component={Employee} />
+          <Route path="/supplier" component={Supplier} />
+          <Route path="/other" component={Other} />
+          <Route path="/setting" component={Setting} /> 
+          <Route path="/transferbank" component={TransferBank} />
+          <Route path="/receivemoney" component={ReceiveMoney} />
+          <Route path="/paymoney" component={PayMoney} />
+          <Route path="/salesorder" component={SalesOrder} />
+          <Route path="/salesdelivery" component={SalesDelivery} />
+          <Route path="/salesquote" component={SalesQuote} />
+          <Route path="/salesreturn" component={SalesReturn} />
+          <Route path="/priceadjusment" component={PriceAdjusment} />
+          <Route path="/discount" component={Discount} />
+          <Route path="/comissionsales" component={ComissionSales} />
+          <Route path="/purchaseinvoice" component={PurchaseInvoice} />
+          <Route path="/purchaseorder" component={PurchaseOrder} />
+          <Route path="/purchasedelivery" component={PurchaseDelivery} />
+          <Route path="/purchasequote" component={PurchaseQuote} />
+          <Route path="/purchasereturn" component={PurchaseReturn} />
+          <Route path="/supplierprice" component={SupplierPrice} />
+          <Route path="/prepaidpurchase" component={PrepaidPurchase} />
 
           <Route exact path="/" component={App} />
           <Route path="/createexpense" component={CreateExpense} />
           <Route path="/newaccount" component={NewAccount} />
+          <Route path="/generalledger" component={GeneralLedger} />
           <Route path="/generaljournal" component={GeneralJournal} />
           <Route path="/salariesexpense" component={SalariesExpense} />
           <Route path="/closingbook" component={ClosingBook} />

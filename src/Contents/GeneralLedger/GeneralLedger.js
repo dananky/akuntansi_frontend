@@ -1,22 +1,37 @@
 import React from 'react';
 
-export const Expense = (props) => {
+export const GeneralLedger = (props) => {
 
-    const handleCreateExpense = () => {
-        props.history.push('/createexpense')
+    const handleChartAccount = () => {
+        props.history.push('/chartaccount')
     }
-    const handleExpenseCategory = () => {
-        props.history.push('/expensecategory')
+    const handleNewAccount = () => {
+        props.history.push('/newaccount')
     }
-
+    const handleGeneralJournal = () => {
+        props.history.push('/generaljournal')
+    }
+    const handleSalariesExpense = () => {
+        props.history.push('/salariesexpense')
+    }
+    const handleClosingBook = () => {
+        props.history.push('/closingbook')
+    }
+    const handleBudgeting = () => {
+        props.history.push('/budgeting')
+    }
 
     return (
             
         <div className="card mt-4">
             <div className="card-body">
                 <div className="d-flex mb-5">
-                    <button className="btn btn-md btn-secondary mr-2" onClick={handleCreateExpense}>Create Expense</button>
-                    <button className="btn btn-md btn-secondary mr-2" onClick={handleExpenseCategory}>Expense Category</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleChartAccount}>Chart of Account</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleNewAccount}>New Account</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleGeneralJournal}>General Journal</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleSalariesExpense}>Salaries Expense</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleClosingBook}>Closing Book</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleBudgeting}>Budgeting</button>
                 </div>
                 <div className="d-flex flex-column mb-5">
                     <div className="d-flex mb-4 justify-content-end">
@@ -27,7 +42,7 @@ export const Expense = (props) => {
                     </div>
                 </div>
 
-                <h4>Expense List</h4>
+                <h4>Purchase List</h4>
                 <hr/>
                 <table className="table table-hover">
                     <thead className="thead-dark">
