@@ -3,7 +3,7 @@ import React from 'react';
 export const GeneralLedger = (props) => {
 
     const handleChartAccount = () => {
-        props.history.push('/chartaccount')
+        props.history.push('/generalledger')
     }
     const handleNewAccount = () => {
         props.history.push('/newaccount')

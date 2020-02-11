@@ -45,15 +45,15 @@ export const PrepaidPurchase = () => {
                     </div>
 
                     <div className="pr-3 w-25">
-                        <label>Purchase Return</label>
+                        <label>Prepaid Purchase</label>
                         <select className="form-control form-control-sm">
+                            <option>Prepaid Purchase</option>
                             <option>Purchase Return</option>
                             <option>Purchase Order</option>
                             <option>Purchase Invoice</option>
                             <option>Purchase Delivery</option>
                             <option>Purchase Quote</option>
                             <option>Supplier Price</option>
-                            <option>Prepaid Purchase</option>
                         </select>
                     </div>
 

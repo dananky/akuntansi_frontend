@@ -3,7 +3,7 @@ import React from 'react';
 export const Purchase = (props) => {
 
     const handlePurchaseOrder = () => {
-        props.history.push('/purchase')
+        props.history.push('/purchaseorder')
     }
     const handlePurchaseInvoice = () => {
         props.history.push('/purchaseinvoice')
