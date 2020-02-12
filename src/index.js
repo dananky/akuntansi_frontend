@@ -12,7 +12,7 @@ import ClosingBook from "./Contents/GeneralLedger/ClosingBook";
 import StartClosingBook from "./Contents/GeneralLedger/StartClosingBook";
 import Budgeting from "./Contents/GeneralLedger/Budgeting";
 import GoodsService from "./Contents/InventoryProduct/GoodsService";
-import ProductRequisition from "./Contents/InventoryProduct/ProductRecuisition";
+import ProductRequisition from "./Contents/InventoryProduct/ProductRequisition";
 import Header from "./Navs/Header";
 import Sidebar from "./Navs/Sidebar";
 import Footer from "./Navs/Footer";
@@ -52,6 +52,17 @@ import { Setting } from './Contents/Setting/Setting';
 import { SignIn } from './Contents/Auth/SignIn';
 import { SignUp } from './Contents/Auth/SignUp';
 import { PrepaidPurchase } from './Contents/Purchase/PrepaidPurchase';
+import { RecordAsset } from "./Contents/AssetManagement/RecordAsset";
+import { DisposalAsset } from "./Contents/AssetManagement/DisposalAsset";
+import { Depreciation } from "./Contents/AssetManagement/Depreciation";
+import JobOrder from "./Contents/InventoryProduct/JobOrder";
+import MaterialAddition from "./Contents/InventoryProduct/MaterialAddition";
+import ProductCategory from "./Contents/InventoryProduct/ProductCategory";
+import StockAdjustment from "./Contents/InventoryProduct/StockAdjustment";
+import ProductUnit from "./Contents/InventoryProduct/ProductUnit";
+import Warehouse from "./Contents/InventoryProduct/Warehouse";
+import WarehouseTransfer from "./Contents/InventoryProduct/WarehouseTransfer";
+import ProductMinimum from "./Contents/InventoryProduct/ProductMinimumStock";
 
 const routing = (
   <Router>
@@ -68,7 +79,19 @@ const routing = (
           <Route path="/purchase" component={Purchase} />
           <Route path="/expense" component={Expense} />
           <Route path="/inventory" component={InventoryProduct} />
+          <Route path="/joborder" component={JobOrder} />
+          <Route path="/materialaddition" component={MaterialAddition} />
+          <Route path="/productcategory" component={ProductCategory} />
+          <Route path="/productminimum" component={ProductMinimum} />
+          <Route path="/productunit" component={ProductUnit} />
+          <Route path="/produtrequisition" component={ProductRequisition} />
+          <Route path="/stockadjustment" component={StockAdjustment} />
+          <Route path="/warehouse" component={Warehouse} />
+          <Route path="/warehousetransfer" component={WarehouseTransfer} />
           <Route path="/assetmanagement" component={AssetManagement} />
+          <Route path="/recordasset" component={RecordAsset} />
+          <Route path="/disposalasset" component={DisposalAsset} />
+          <Route path="/depreciation" component={Depreciation} />
           <Route path="/tax" component={Tax} />
           <Route path="/reports" component={Reports} />
           <Route path="/contactlist" component={ContactList} />

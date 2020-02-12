@@ -8,22 +8,46 @@ export const InventoryProduct = (props) => {
     const handleProductRequisition = () => {
         props.history.push('/productrequisition')
     }
+    const handleJobOrder = () => {
+        props.history.push('/joborder')
+    }
+    const handleMaterialAddition = () => {
+        props.history.push('/materialaddition')
+    }
+    const handleProdutCategory = () => {
+        props.history.push('/productcategory')
+    }
+    const handleProductMinimum = () => {
+        props.history.push('/productminimum')
+    }
+    const handleProductUnit = () => {
+        props.history.push('/productunit')
+    }
+    const handleStockAdjustment = () => {
+        props.history.push('/stockadjustment')
+    }
+    const handleWarehouse = () => {
+        props.history.push('/warehouse')
+    }
+    const handleWarehouseTransfer = () => {
+        props.history.push('/warehousetransfer')
+    }
 
     return (
             
         <div className="card mt-4">
             <div className="card-body">
                 <div className="d-flex mb-5">
-                    <button className="btn btn-md btn-secondary mr-2" >Goods and Services</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Product Requisition</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Material Addition</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Job Order</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Product Category</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Product Minimum Stock</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Stock Adjustment</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Warehouse</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Warehouse Transfer</button>
-                    <button className="btn btn-md btn-secondary mr-2" >Product Unit</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleGoodServices}>Goods and Services</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleProductRequisition}>Product Requisition</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleMaterialAddition}>Material Addition</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleJobOrder}>Job Order</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleProdutCategory}>Product Category</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleProductMinimum}>Product Minimum Stock</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleStockAdjustment}>Stock Adjustment</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleWarehouse}>Warehouse</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleWarehouseTransfer}>Warehouse Transfer</button>
+                    <button className="btn btn-md btn-secondary mr-2" onClick={handleProductUnit}>Product Unit</button>
                 </div>
                 <div className="d-flex flex-column mb-5">
                     <div className="d-flex mb-4 justify-content-end">

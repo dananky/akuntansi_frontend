@@ -3,8 +3,8 @@ import React from "react";
 const ProductRequisition = props => {
   return (
     <>
-      <div className="content">
-        <h4 className="mb-4">Product Requisition</h4>
+    <div className="card mt-4">
+      <div className="card-body">
         <div className="d-flex flex-column mb-5">
           <div className="d-flex mb-4 ">
             <button className="ml-auto btn btn-sm btn-secondary mr-2">
@@ -42,6 +42,11 @@ const ProductRequisition = props => {
             </thead>
             <tbody>
               <tr>
+                <td>
+                  <select className="form-control form-control-sm">
+                      <option>select</option>
+                  </select>
+                </td>
                 <td>
                   <input
                     className="form-control form-control-sm"
@@ -103,6 +108,7 @@ const ProductRequisition = props => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };
